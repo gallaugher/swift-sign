@@ -61,7 +61,6 @@ display.show(group)
 # time.monotonic() is an internal clock value returned in fractional seconds
 time_value = 0 #  time.monotonic() holder
 grid_index = 0 #  index for tilegrid
-# party_count = 0 #  count for animation cycles
  
 while True:
     #  every 0.2 seconds...
