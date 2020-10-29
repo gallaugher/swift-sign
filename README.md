@@ -21,3 +21,8 @@ Image must also be no greater than 8-bits, so also select the menu:
   
 When editing, treat every 32 bits as if it's a frame in the grid that's animated by the python code.
 the swift.bmp has 10 images, so you'll note while loop resets to grid_index = 0 after the 10th image is displayed.
+
+NOTE: Since Adabox 016 added a 64 x 32, you can use the code above, just change the matrix_width = 32 to 64.
+Also make sure you use images that support 64 bit width. Only one up here so far is 
+yoda_sip.bmp
+which is baby yoda sipping soup.
