@@ -82,7 +82,10 @@ image_grid = displayio.TileGrid(image_bit, pixel_shader=image_pal,
 group = displayio.Group()
 group.append(image_grid)
 
-display.show(group)
+# deprecated method, only use with CircuitPython 8 or older
+# display.show(group)
+# new property to be used with CircuitPyhton 9 and newer
+display.root_group = group
 
 # time.monotonic() is an internal clock value returned in fractional seconds
 time_value = 0 #  time.monotonic() holder
