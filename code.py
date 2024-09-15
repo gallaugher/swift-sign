@@ -82,7 +82,7 @@ image_grid = displayio.TileGrid(image_bit, pixel_shader=image_pal,
 group = displayio.Group()
 group.append(image_grid)
 
-display.show(group)
+display.root_group = group
 
 # time.monotonic() is an internal clock value returned in fractional seconds
 time_value = 0 #  time.monotonic() holder
