@@ -1,3 +1,4 @@
+# Updated Jan. 23, 2025 and tested with CircuitPython 9.2.3
 # Build by Prof. John Gallaugher @gallaugher, https://gallaugher.com
 # YouTube: bit.ly/@BuildWithProfG
 # Project Repo: https://github.com/gallaugher/swift-sign
