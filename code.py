@@ -1,7 +1,6 @@
 # Build by Prof. John Gallaugher @gallaugher, https://gallaugher.com
-# YouTube: bit.ly/GallaugherYouTube
+# YouTube: bit.ly/@BuildWithProfG
 # Project Repo: https://github.com/gallaugher/swift-sign
-# Build Video available in MakerSnack playlist at: http://bit.ly/makersnack
 # Code modified from original by @BlitzCityDIY via
 # Adafruit tutorial at:
 # https://learn.adafruit.com/iot-twitter-listener-party-parrot/coding-the-iot-party-parrot
@@ -25,9 +24,7 @@
 #      neopixel.mpy
 #      simpleio.mpy
 
-import time
-import board
-import displayio
+import time, board, displayio
 from adafruit_matrixportal.matrix import Matrix
 import adafruit_imageload
 
@@ -58,7 +55,7 @@ display = matrix.display
 # "partyParrotsMatrix", "ghost-animation"
 # Got other fun ones? Tweet 'em at me! @gallaugher
 
-bitmap_name = "full-animation"
+bitmap_name = "combined-animation"
 bitmap = displayio.OnDiskBitmap(open("/"+bitmap_name+".bmp", "rb"))
 # Below assumes you have a single horizontal strip of images
 # If you have a single vertical strip, swap out matrix_height for matrix_width
@@ -82,11 +79,14 @@ image_grid = displayio.TileGrid(image_bit, pixel_shader=image_pal,
 group = displayio.Group()
 group.append(image_grid)
 
-display.show(group)
+# display.show(group)
+display.root_group = group
 
 # time.monotonic() is an internal clock value returned in fractional seconds
 time_value = 0 #  time.monotonic() holder
 grid_index = 0 #  index for tilegrid
+
+print("Matrix Portal Sign Code Running!")
 
 while True:
     #  every animation_speed seconds...
