@@ -9,7 +9,7 @@
 # This code cuts out all of the networking above and treats the image as
 # a continuously-cycling animation.
 
-# Developed using CircuitPython v.6
+# Originally developed using CircuitPython v.6
 # The following libraries are in the lib folder
 # These were installed by circup - I think these are more than are needed.
 #     adafruit_bitmap_font
@@ -59,9 +59,10 @@ display = matrix.display
 # "raspberry-adafruit-animated", "animated_arduino",
 # "swift-maker-animation", "animated-excel",
 # "partyParrotsMatrix", "ghost-animation"
-# Got other fun ones? Tweet 'em at me! @gallaugher
+# "combined-animation" Swift & Maker Logos, No Excel
+# Got other fun ones? Post 'em to BlueSky and cc @gallaugher
 
-bitmap_name = "combined-animation"
+bitmap_name = "full-animation"
 bitmap = displayio.OnDiskBitmap(open("/"+bitmap_name+".bmp", "rb"))
 # Below assumes you have a single horizontal strip of images
 # If you have a single vertical strip, swap out matrix_height for matrix_width
