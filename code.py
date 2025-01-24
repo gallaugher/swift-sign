@@ -11,6 +11,7 @@
 
 # Developed using CircuitPython v.6
 # The following libraries are in the lib folder
+# These were installed by circup - I think these are more than are needed.
 #     adafruit_bitmap_font
 #     adafruit_bus_device
 #     adafruit_connection_manager.mpy
