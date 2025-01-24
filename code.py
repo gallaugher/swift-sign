@@ -29,20 +29,6 @@
 #     neopixel.mpy
 #     simpleio.mpy
 
-
-# Folders:
-#      adafruit_bitmap_font
-#      adafruit_bus_device
-#      adafruit_display_text
-#      adafruit_esp32spi
-#      adafruit_imageload
-#      adafruit_io
-#      adafruit_matrixportal
-# Files:
-#      adafruit_requests.mpy
-#      neopixel.mpy
-#      simpleio.mpy
-
 import time, board, displayio
 from adafruit_matrixportal.matrix import Matrix
 import adafruit_imageload
