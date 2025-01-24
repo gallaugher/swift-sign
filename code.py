@@ -11,7 +11,25 @@
 
 # Developed using CircuitPython v.6
 # The following libraries are in the lib folder
-# (May include more than is needed - I haven't double-checked)
+#     adafruit_bitmap_font
+#     adafruit_bus_device
+#     adafruit_connection_manager.mpy
+#     adafruit_display_text
+#     adafruit_esp32spi
+#     adafruit_fakerequests.mpy
+#     adafruit_imageload
+#     adafruit_io
+#     adafruit_matrixportal
+#     adafruit_minimqtt
+#     adafruit_miniqr.mpy
+#     adafruit_pixelbuf.mpy
+#     adafruit_portalbase
+#     adafruit_requests.mpy
+#     adafruit_ticks.mpy
+#     neopixel.mpy
+#     simpleio.mpy
+
+
 # Folders:
 #      adafruit_bitmap_font
 #      adafruit_bus_device
